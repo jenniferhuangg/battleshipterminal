@@ -67,8 +67,11 @@ Broadcast when a player loses or disconnects.
 ## Error Handling
 
 Invalid messages: Server responds with `INVALID\n.`
+
 Overlong messages: Any message exceeding 100 bytes without a newline results in disconnection.
+
 Write errors / SIGPIPE: Client is disconnected.
+
 Premature disconnection: If registered, the loss is broadcast; otherwise, ignored
   
 ## How to play:
